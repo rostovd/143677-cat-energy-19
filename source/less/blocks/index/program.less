@@ -1,0 +1,74 @@
+.program {
+  background-repeat: no-repeat;
+  background-size: 100% 306px;
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  margin-bottom: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 304px;
+    background-color: @bg-green;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+  }
+}
+
+.program__title {
+  font-family: @oswald-regular;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.program__text {
+  font-family: @oswald-regular;
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.program__image {
+  position: relative;
+  width: 280px;
+  height: 270px;
+}
+
+.program__link {
+  font-family: @oswald-regular;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: @bg-green;
+  display: block;
+  width: 100%;
+  padding: 11px 0;
+
+  &:hover,
+  &:focus {
+    background-color: @bg-green-hover;
+  }
+
+  &:active {
+    background-color: @bg-green-hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
