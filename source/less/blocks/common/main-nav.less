@@ -1,0 +1,60 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+
+  &--closed {
+    .main-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 19px;
+      width: 24px;
+      height: 2px;
+
+      background-color: @black2;
+      box-shadow: 0 8px 0 0 @black2, 0 16px 0 0 @black2;
+    }
+  }
+
+  &--opened {
+    .main-nav__toggle {
+      top: 0;
+      right: 0;
+
+
+      &::before,
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 31px;
+        left: 22px;
+        width: 24px;
+        height: 2px;
+
+        background-color: @black2;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 65px;
+  height: 65px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+}
