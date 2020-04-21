@@ -28,3 +28,22 @@
 .page-footer__logo-image {
   padding: 36px 0 26px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    padding: 22px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    margin: unset;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    padding: 20px 40px;
+  }
+}
