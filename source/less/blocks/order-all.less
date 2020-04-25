@@ -1,0 +1,65 @@
+.order-all {
+  background-color: @bg-green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  width: 280px;
+  min-height: 225px;
+  padding-top: 65px;
+}
+
+.order-all__image {
+  display: block;
+  margin: 0 auto 63px auto;
+}
+
+.order-all__text {
+  font-family: @arial;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  width: 170px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .order-all {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    padding: 0 90px;
+    box-sizing: border-box;
+    align-items: center;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .order-all__image {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .order-all__text {
+    margin: 0;
+    text-align: left;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-all {
+    flex-direction: column;
+    width: 245px;
+    box-sizing: border-box;
+    padding-top: 65px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+  }
+
+  .order-all__image {
+    margin-bottom: 65px;
+  }
+
+  .order-all__text {
+    text-align: center;
+    padding-right: 0;
+  }
+}

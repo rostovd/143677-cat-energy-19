@@ -32,3 +32,33 @@
   background-color: @bg-grey;
   padding: 0 9px;
 }
+
+@media (min-width: @tablet-width) {
+  .before-after-item {
+    width: 162px;
+  }
+
+  .before-after-item__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .before-after-item__title {
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+    bottom: -8px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after-item {
+    width: 160px;
+    padding: 15px 0 18px 0;
+  }
+
+  .before-after-item__title {
+    background-color: @bg-grey;
+  }
+}
