@@ -37,6 +37,10 @@
   line-height: 18px;
   color: @black4;
   margin: 0;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -69,6 +73,7 @@
     }
 
     &::after {
+      /*content: "1";*/
       counter-increment: itemNum;
       content: counter(itemNum);
       position: absolute;
