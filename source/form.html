@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи - Каталог продукции </title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -77,14 +77,14 @@
               <li class="form__item">
                 <label class="form__label form__label--email" for="form-email">e-mail:*</label>
                 <input class="form__input-text form__input-text--email" type="email" placeholder="kuklachev@gmail.com" id="form-email" name="email" required>
-                <svg class="form__input-icon form__input-icon--email" width="17" height="42" aria-hidden="true" role="presentation">
+                <svg class="form__input-icon form__input-icon--email" width="17" height="42" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
                 </svg>
               </li>
               <li class="form__item">
                 <label class="form__label form__label--phone" for="form-phone">телефон:*</label>
-                <input class="form__input-text form__input-text--phone" type="tel" placeholder="8 (960) 900-60-90" id="form-phone" name="phone">
-                <svg class="form__input-icon form__input-icon--phone" width="22" height="42" aria-hidden="true" role="presentation">
+                <input class="form__input-text form__input-text--phone" type="tel" placeholder="8 (960) 900-60-90" id="form-phone" name="phone" required>
+                <svg class="form__input-icon form__input-icon--phone" width="22" height="42" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
               </li>
@@ -130,9 +130,10 @@
 
   </main>
   <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
     <div class="contacts__header container">
       <p class="contacts__welcome">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
     </div>
     <div class="contacts__map"></div>
   </section>
