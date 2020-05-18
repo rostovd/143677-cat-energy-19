@@ -27,7 +27,7 @@ function initMap() {
   });
 
   google.maps.event.addDomListener(window, "resize", function() {
-    var latLng;
+    let latLng;
     if (window.matchMedia("(min-width: 1300px)").matches) {
       latLng = new google.maps.LatLng(bigLat,bigLng);
     } else {
