@@ -17,7 +17,7 @@ function initMap() {
     center: {lat, lng},
     zoom: 17
   });
-  let image = "../img/map-pin.png";
+  let image = "img/map-pin.png";
   let marker = new google.maps.Marker({
     position: {lat: 59.9387942, lng: 30.3230833},
     map: map,
