@@ -17,7 +17,7 @@ function initMap() {
     center: {lat, lng},
     zoom: 17
   });
-  let image = "../img/map-pin.png";
+  let image = "img/map-pin.png";
   let marker = new google.maps.Marker({
     position: {lat: 59.9387942, lng: 30.3230833},
     map: map,
@@ -27,7 +27,7 @@ function initMap() {
   });
 
   google.maps.event.addDomListener(window, "resize", function() {
-    var latLng;
+    let latLng;
     if (window.matchMedia("(min-width: 1300px)").matches) {
       latLng = new google.maps.LatLng(bigLat,bigLng);
     } else {

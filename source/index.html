@@ -9,6 +9,11 @@
 </head>
 
 <body class="index-page">
+
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <div class="container">
     <header class="page-header">
       <a class="logo page-header__logo">
@@ -120,7 +125,7 @@
               <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="before-after__image before-after__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"  alt="cat after">
+              <img class="before-after__image before-after__image--after before-after__image--show" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"  alt="cat after">
             </picture>
           </div>
           <ul class="before-after__buttons buttons-list">
@@ -159,21 +164,21 @@
           <li class="social__item">
             <a class="social__link social__link--vk" href="#" aria-label="Переход на сайт vk">
               <svg class="social__icon social__icon--vk" width="22" height="12">
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
+                <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--ig" href="#" aria-label="Переход на сайт instagram">
               <svg class="social__icon social__icon--ig" width="16" height="16">
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--fb" href="#" aria-label="Переход на сайт facebook">
               <svg class="social__icon social__icon--fb" width="10" height="19">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -183,15 +188,15 @@
         <a class="copyright__link" href="http://htmlacademy.ru">HTML Academy</a>
         <a class="copyright__link-logo" href="http://htmlacademy.ru" aria-label="Переход на сайт в HTML Academy">
           <svg class="copyright__logo" width="60" height="80">
-            <use xlink:href="img/sprite.svg#icon-logo"></use>
+            <use xlink:href="#logo-academy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="js/slider.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/slider.min.js"></script>
+  <script src="js/menu.min.js"></script>
+  <script src="js/map.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf-4G137mAzv8FN9PVtUvGz6XV0wuJ4sU&callback=initMap"
     async defer></script>
 </body>
