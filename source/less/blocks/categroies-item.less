@@ -67,15 +67,17 @@
   color: @black-first;
   text-decoration: none;
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
+  padding-right: 50px;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    top: 2px;
-    left: 98px;
-    width: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 33px;
     height: 11px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
   }
@@ -84,8 +86,6 @@
   &:focus {
     &::after {
       background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
-      width: 33px;
-      height: 11px;
     }
   }
 
@@ -155,11 +155,6 @@
   .categories-item__link {
     font-size: 20px;
     line-height: 20px;
-
-    &::after {
-      top: 4px;
-      left: 131px;
-    }
   }
 }
 

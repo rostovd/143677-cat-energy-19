@@ -36,11 +36,11 @@
       margin-right: 11px;
     }
 
-    .form__input-text:focus + .form__input-icon {
+    .form__input-text:focus+.form__input-icon {
       fill: @bg-green;
     }
 
-    .form__input-text:invalid + .form__input-icon {
+    .form__input-text:invalid+.form__input-icon {
       fill: #ff8282;
     }
   }
@@ -75,9 +75,9 @@
     margin-bottom: 0;
   }
 
-  input[type="radio"]:focus + label::before,
-  input[type="checkbox"]:focus + label::before {
-    box-shadow: 0 0 5px  #4d90fe;
+  input[type="radio"]:focus+label::before,
+  input[type="checkbox"]:focus+label::before {
+    box-shadow: 0 0 5px #4d90fe;
   }
 }
 
@@ -130,6 +130,7 @@
 
   &--radio,
   &--checkbox {
+
     &:hover,
     &:focus {
       &::before {
@@ -148,7 +149,7 @@
   }
 }
 
-.form__input-radio:checked + label {
+.form__input-radio:checked+label {
   &::after {
     content: "";
     position: absolute;
@@ -162,7 +163,7 @@
   }
 }
 
-.form__input-checkbox:checked + label {
+.form__input-checkbox:checked+label {
   &::before {
     content: "";
     background: url("../img/icon-tick.svg") no-repeat;
@@ -307,8 +308,7 @@
   }
 
   .form__list {
-    margin-bottom: 72px;
-    padding: 0 68px 0 61px;
+    padding: 0 60px;
 
     &--mass {
       border: 1px solid #e6e6e6;
@@ -335,17 +335,10 @@
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 12px;
-      justify-content: space-between;
 
       .form__item {
         width: 275px;
-        /*margin-right: 60px;*/
-        margin-left: 20px;
-        margin-bottom: 30px;
-
-        &:nth-child(even) {
-          margin-right: 0;
-        }
+        margin: 20px;
       }
 
       .form__label {
@@ -389,7 +382,7 @@
     }
   }
 
-  .form__input-radio:checked + label {
+  .form__input-radio:checked+label {
     &::after {
       width: 18px;
       height: 18px;
@@ -398,7 +391,7 @@
     }
   }
 
-  .form__input-checkbox:checked + label {
+  .form__input-checkbox:checked+label {
     &::before {
       background-position: 10px 10px;
     }
@@ -584,6 +577,7 @@
     &--contacts {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       padding: 0 40px;
       align-items: baseline;
       margin-bottom: 43px;
@@ -624,7 +618,7 @@
       }
     }
 
-    .form__input-radio:checked + label {
+    .form__input-radio:checked+label {
       &::after {
         top: 11px;
         left: -28px;
@@ -632,14 +626,14 @@
     }
 
     &--additional {
-      flex-wrap: nowrap;
-      justify-content: space-between;
+      flex-wrap: wrap;
       margin-bottom: 51px;
       padding: 0 40px;
 
       .form__item {
         width: 245px;
-        margin: 0;
+        margin: 0 60px 0 0;
+
       }
 
       .form__label {

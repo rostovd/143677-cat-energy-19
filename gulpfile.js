@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlmin = require('gulp-htmlmin');
 var uglify = require('gulp-uglify-es').default;
+var concat = require('gulp-concat');
 
 var del = require("del");
 
@@ -38,8 +39,8 @@ gulp.task("css", function () {
 
 gulp.task('compress', function () {
   return gulp.src("source/js/**/*.js")
-    .pipe(rename({suffix: ".min"}))
     .pipe(uglify(/* options */))
+    .pipe(concat("main.min.js"))
     .pipe(gulp.dest("build/js"))
 });
 
@@ -90,7 +91,6 @@ gulp.task("copy", function(){
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico"
   ], {
     base: "source"

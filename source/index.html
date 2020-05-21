@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи - Каталог продукции </title>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/main.min.js" as="script">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -45,12 +49,15 @@
       <h2 class="program__title">Функциональное питание для котов</h2>
       <p class="program__text">Занялся собой? Займись котом!</p>
       <picture>
-        <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 1300px)"
+          srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
         <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-        <img class="program__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="cat enegry курица">
+        <img class="program__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+          alt="cat enegry курица">
       </picture>
       <a class="program__link" href="form.html">Подобрать программу</a>
     </section>
@@ -112,20 +119,26 @@
         <div class="before-after__desktop-column-wrapper">
           <div class="before-after__image-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="before-after__image before-after__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="cat before">
+              <img class="before-after__image before-after__image--before" src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" alt="cat before">
             </picture>
             <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="before-after__image before-after__image--after before-after__image--show" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"  alt="cat after">
+              <img class="before-after__image before-after__image--after before-after__image--show"
+                src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="cat after">
             </picture>
           </div>
           <ul class="before-after__buttons buttons-list">
@@ -149,7 +162,8 @@
     <h2 class="visually-hidden">Контакты</h2>
     <div class="contacts__header container">
       <p class="contacts__welcome">приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span
+          class="contacts__city">Санкт-Петербург</span></address>
     </div>
     <div class="contacts__map"></div>
   </section>
@@ -194,9 +208,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/slider.min.js"></script>
-  <script src="js/menu.min.js"></script>
-  <script src="js/map.min.js"></script>
+  <script src="js/main.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf-4G137mAzv8FN9PVtUvGz6XV0wuJ4sU&callback=initMap"
     async defer></script>
 </body>
